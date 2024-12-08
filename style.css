@@ -1,0 +1,451 @@
+/* Primary Palette */
+:root {
+--color-dark: #4F5A58;   
+--color-light: #F3F3EF; 
+--color-tertiary: #E9E5DD;  
+--color-access: #BD9A84;
+--primary-shadow: 2px 2px 4px rgba(14, 29, 26, 1);
+--secondary-shadow: 1px 1px 2px rgba(14, 29, 26, 1);
+}
+
+@font-face {
+    font-family: 'Aloevera Display';
+    src: url('fonts/AloeveraDisplay-Medium.woff2') format('woff2'),
+        url('fonts/AloeveraDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Aloevera Display';
+    src: url('fonts/AloeveraDisplay-Bold.woff2') format('woff2'),
+        url('fonts/AloeveraDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Aloevera display condensed';
+    src: url('fonts/Aloeveradisplaycondensed-Regular.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera display condensed SmBd';
+    src: url('fonts/Aloeveradisplaycondensed-SemiBold.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera display condensed';
+    src: url('fonts/Aloeveradisplaycondensed-Medium.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera display condensed';
+    src: url('fonts/Aloeveradisplaycondensed-Black.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera display condensed ExBd';
+    src: url('fonts/Aloeveradisplaycondensed-ExtraBold.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera Display';
+    src: url('fonts/AloeveraDisplay-Regular.woff2') format('woff2'),
+        url('fonts/AloeveraDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera Display';
+    src: url('fonts/AloeveraDisplay-SemiBold.woff2') format('woff2'),
+        url('fonts/AloeveraDisplay-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera Display';
+    src: url('fonts/AloeveraDisplay-Light.woff2') format('woff2'),
+        url('fonts/AloeveraDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aloevera display condensed';
+    src: url('fonts/Aloeveradisplaycondensed-Bold.woff2') format('woff2'),
+        url('fonts/Aloeveradisplaycondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.my-6 {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.px-6 {
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: 'Aloevera Display';
+}
+
+#logo {
+    max-width: 100px;
+}
+
+nav {
+    font-size: 20px;
+}
+
+.nav-link {
+    color: var(--color-dark) !important;
+}
+
+.nav-link.active {
+    color: var(--color-access) !important;
+}
+
+#hero , #about-us-hero {
+    background-image: url("images/hero2.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#hero-text {
+    background-color: var(--color-dark);
+    height: 100vh;
+    opacity: 0.8;
+}
+
+#hero-text-block {
+    color: white;
+    opacity: 1;
+}
+
+#hero-text-block h1{
+    font-size: 48px;
+    
+}
+
+#hero-text-block h2{
+    font-size: 24px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+button {
+    background-color: var(--color-access);
+    color: white;
+    border: none;
+    box-shadow: var(--primary-shadow);
+    border-radius: 4%;
+}
+
+#about-us {
+    height: 100vh;
+    background-image: url("images/about-us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about-us-text-block {
+    font-family: 'Aloevera Display', sans-serif;
+    background-color: rgba(79, 90, 88, 0.8);
+    color: white;
+}
+
+#about-us-text-block h2 {
+    text-align: center;
+} 
+
+#about-us-text-block p {
+    color: rgba(255, 255, 255, 0.8)
+} 
+
+
+
+#our-services-text-block h2, #latest-news-text-block h2{
+    color:var(--color-dark)
+}
+
+#our-services-text-block p, #latest-news-text-block p{
+    color:rgba(79, 90, 88, 0.8);
+}
+
+.vertex-card {
+    height: 666px;
+}
+
+
+
+#hospital-card {
+    background-image: url("images/hospital.jpg");
+    background-position: center;
+}
+
+#landscaping-card {
+    background-image: url("images/ladnscaping.jpg");
+    background-position: center;
+}
+
+#consult-card {
+    background-image: url("images/consult.jpg");
+    background-position: center;
+}
+
+#finishing-card {
+    background-image: url("images/custom-finishes.jpg");
+    background-position: center;
+}
+
+.card-block {
+    background-color: rgba(79, 90, 88, 0.8);
+    height: 300px;
+    box-sizing: border-box;
+    bottom:0;
+}
+
+.card-block h2 {
+    color: white;
+}
+
+.card-block p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.card-subtitle {
+    color: rgba(79, 90, 88, 0.8);
+    font-weight: normal;
+}
+
+
+footer {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+footer img {
+    width: 250px;
+    filter: brightness(2);
+}
+
+footer i {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-header {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+#about-us-hero-text-block {
+    background-color: rgba(79, 90, 88, 0.8);
+    color: white;
+}
+
+#about-us-hero-text-block h2{
+   color: rgba(255, 255, 255, 0.8);
+   font-weight: normal;
+   font-size: 24px;
+}
+
+#about-us-hero-text-block p{
+    color: rgba(255, 255, 255, 0.8);
+ }
+
+ #vision-mission h2{
+    color: var(--color-dark);
+ }
+
+ #vision-mission p{
+    color:rgba(79, 90, 88, 0.8);
+ }
+
+ #core-values {
+    background-color: var(--color-dark);
+    color: white;
+ }
+
+ #core-values i{
+    font-size: 45px;
+ }
+
+ #core-values p {
+    color: rgba(255, 255, 255, 0.8);
+ }
+
+ #our-projects h2 {
+    color: var(--color-dark);
+ }
+
+ #our-projects p {
+    color: rgba(79, 90, 88, 0.8);
+ }
+
+ #pagination button{
+    box-shadow: var(--secondary-shadow);
+    height: 26px;
+    width: 26px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+ }
+
+ .pag-active {
+    box-shadow: inset var(--secondary-shadow) !important;
+    background-color: var(--color-light);
+    border: solid 1px var(--color-access);
+    color: var(--color-access) !important;
+ }
+
+ #hero-mobile, #about-us-hero-mobile {
+    display: none;
+ }
+
+ @media screen and (max-width: 992px) {
+    #hero, #about-us-hero {
+        display: none !important;
+    }
+    #hero-mobile {
+        display: inherit;
+        padding: 0;
+     }
+
+     #hero-mobile img {
+        width: 100%;
+     }
+
+     #hero-mobile-text-block {
+        background-color: var(--color-dark);
+        color: white;
+     }
+
+     #hero-mobile-text-block h1 {
+        letter-spacing: 0.1em;
+        font-size: 32px;
+        
+     }
+
+     #hero-mobile-text-block h2 {
+        font-size: 18px;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0.1em;
+     }
+     #about-us-hero-mobile {
+        display: inherit;
+        padding: 0;
+     }
+     #about-us-hero-mobile img {
+        width: 100%;
+     }
+
+     #about-us-hero-mobile-text-block {
+        background-color: var(--color-dark);
+     }
+
+     #about-us-hero-mobile-text-block h1 {
+        color: white;
+     }
+
+     #about-us-hero-mobile-text-block h2, #about-us-hero-mobile-text-block p {
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: normal;
+     }
+
+     .my-6 {
+        margin-top: 48px;
+        margin-bottom: 48px;
+     }
+
+     .px-6 {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+     .vertex-card {
+        height: 666px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+
+     #hospital-card {
+        background-image: url("images/hospital-mobile.jpg");
+    }
+
+    #landscaping-card {
+      background-image: url("images/landscaping-mobile.jpg");
+    }
+
+    #consult-card {
+        background-image: url("images/consultation-mobile.jpg");
+    }
+    
+    #finishing-card {
+        background-image: url("images/custom-finishes.jpg");
+    }
+
+    .card-block {
+        height: auto;
+    }
+     
+  }
