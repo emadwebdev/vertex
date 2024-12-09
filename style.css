@@ -447,5 +447,55 @@ footer i {
     .card-block {
         height: auto;
     }
+
+    #contact-us-form input, #contact-us-form textarea {
+        width: 100% !important;
+    }
      
   }
+
+  #send-message {
+    background-color: var(--color-dark);
+    color: white;
+  }
+
+  #contact-us-form input, #contact-us-form textarea {
+    background-color: var(--color-dark);
+    border-bottom: rgba(255, 255, 255, 0.8);
+    border-style: none;
+    display: block;
+    height: 50px;
+    width: 80%;
+  }
+
+  #contact-us-form input::placeholder, #contact-us-form textarea {
+    color: rgba(255, 255, 255, 0.8);
+    
+  }
+
+  #contact-us-form textarea {
+    height: 200px !important;
+  }
+
+  #contact-info h3, #contact-info i, .contact-title {
+    color: var(--color-dark);
+  }
+
+  #contact-info p {
+    color: rgba(79, 90, 88, 0.8);
+  }
+
+  .contact-title, #contact-info i {
+    font-size: 18px;
+  }
+
+  .contact-title {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+
+  #contact-us-form {
+    box-shadow: var(--secondary-shadow);
+  }
+
+  
